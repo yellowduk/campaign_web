@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Anti-Judol Indonesia</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&family=Inter:wght@400;600;800&family=Oswald:wght@500;700&family=Permanent+Marker&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+              mono: ['"Courier Prime"', 'monospace'],
+              display: ['Oswald', 'sans-serif'],
+              hand: ['"Permanent Marker"', 'cursive'],
+            },
+            colors: {
+              brand: {
+                red: '#D6001C', // Indonesian Red
+                dark: '#1A1A1A',
+                paper: '#FDFBF7',
+                yellow: '#FFDE59',
+              }
+            },
+            backgroundImage: {
+              'paper-pattern': "url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0IiBoZWlnaHQ9IjQiPgo8cmVjdCB3aWR0aD0iNCIgaGVpZ2h0PSI0IiBmaWxsPSIjRkRGQkY3Ii8+CjxyZWN0IHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9IiNFNUU1RTUiLz4KPC9zdmc+')",
+              'cork-pattern': "url('https://www.transparenttextures.com/patterns/cork-board.png')"
+            },
+            boxShadow: {
+              'hard': '4px 4px 0px 0px rgba(0,0,0,1)',
+              'hard-sm': '2px 2px 0px 0px rgba(0,0,0,1)',
+              'polaroid': '0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06), 0 0 0 1px rgba(0,0,0,0.05)',
+            }
+          },
+        },
+      }
+    </script>
+  <script type="importmap">
+{
+  "imports": {
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.30.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-router-dom": "https://aistudiocdn.com/react-router-dom@^7.9.6"
+  }
+}
+</script>
+<style>
+  /* Custom Scrollbar for that retro feel */
+  ::-webkit-scrollbar {
+    width: 12px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #FDFBF7;
+    border-left: 2px solid black;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #D6001C;
+    border: 2px solid black;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #000;
+  }
+  
+  body {
+    background-color: #FDFBF7;
+    background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23000000' fill-opacity='0.05' fill-rule='evenodd'%3E%3Cpath d='M5 0h1v1H5V0zM0 5h1v1H0V5z'/%3E%3C/g%3E%3C/svg%3E");
+  }
+</style>
+</head>
+  <body class="text-neutral-900 antialiased">
+    <div id="root"></div>
+  </body>
+</html>

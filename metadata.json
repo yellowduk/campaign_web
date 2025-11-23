@@ -1,0 +1,7 @@
+{
+  "name": "Anti-Judol Indonesia",
+  "description": "Platform untuk melawan judi online (judol) lewat poster AI dan aksi warga.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
